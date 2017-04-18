@@ -6,8 +6,8 @@ int main()
 	char c;
 	bool is_comment = false;
 	bool end_comment = false;
-	c = getchar();
-	while (c != EOF)
+
+	for (c = getchar(); c != EOF; c = getchar())
 	{
 		end_comment = false;
 
@@ -22,8 +22,7 @@ int main()
 		// only print non-comments, don't print newline at end of comment
 		if ( !is_comment && !end_comment)
 			putchar(c);
-
-		c = getchar();
 	}
+
 	return 0;
 }
