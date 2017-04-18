@@ -6,4 +6,4 @@ Running filterpipe in shell with `bin` executable and `test_input` as test file
 >`$ ./filterpipe < test_input | ./bin`
 
 # Installation
-Just `make` and copy the executable `filterpipe` to your program's binary directory
+Just `make` and copy the executable `filterpipe` to your program's binary directory. Will probably support `make install` in the future
