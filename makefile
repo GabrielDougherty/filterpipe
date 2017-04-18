@@ -1,4 +1,4 @@
-bin: filterpipe.c
+filterpipe: filterpipe.c
 	gcc -o filterpipe filterpipe.c
 
 make clean:
