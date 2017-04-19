@@ -12,7 +12,7 @@ int main()
 		end_comment = false;
 
 		if (!is_comment)
-			is_comment = (c == '#') ? true : false;
+			is_comment = (c == '#');
 		else if (c == '\n')
 		{
 			is_comment = false;
