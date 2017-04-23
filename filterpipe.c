@@ -5,23 +5,17 @@ int main()
 {
 	char c;
 	bool is_comment = false;
-	bool end_comment = false;
 
-	for (c = getchar(); c != EOF; c = getchar())
+	while ((c = getchar()) != EOF)
 	{
-		end_comment = false;
-
 		if (!is_comment)
 			is_comment = (c == '#');
-		else if (c == '\n')
-		{
-			is_comment = false;
-			end_comment = true;
-		}
-		
+
 		// only print non-comments, don't print newline at end of comment
-		if ( !is_comment && !end_comment)
+		if (!is_comment)
 			putchar(c);
+		else if (c == '\n')
+			is_comment = false;
 	}
 
 	return 0;
