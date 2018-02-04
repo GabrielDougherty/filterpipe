@@ -7,5 +7,9 @@ Filterpipe is a tool for testing command line programs with commented input file
 Running filterpipe in shell with `bin` executable and `test_input` as test file
 >`$ ./filterpipe < test_input | ./bin`
 
+Running the same situation with `output` output file
+
+>`$ ./filterpipe < test_input | tee output | ./bin`
+
 # Installation
 Just `make` and copy the executable `filterpipe` to your program's binary directory. Will probably support `make install` in the future
